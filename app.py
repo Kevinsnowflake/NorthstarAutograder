@@ -44,7 +44,7 @@ st.divider()
 left, right = st.columns([1.1, 1])
 
 with left:
-    st.subheader("Attendee info")
+    st.subheader("Attendee Information")
     st.caption("Fields marked with * are required.")
 
     with st.form("greeting_form"):
