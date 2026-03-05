@@ -59,6 +59,23 @@ with left:
         submitted = st.form_submit_button("Generate SQL", type="primary")
 
 with right:
+    st.subheader("Instructions")
+    st.markdown(
+        """
+1. Fill in your information to generate your auto-grader set up, then click "Generate SQL". Copy the full SQL. Be sure to use the same email address that you used to register for the event.
+2. Open a new SQL worksheet in the Snowflake account you used to complete the lab.
+3. Paste the generated script from Step 1 in the worksheet.
+4. Run the script in full.
+5. Copy and paste the full answer key relevant to your workshop in a worksheet and run the entire script:
+    * [Data Engineering](https://github.com/Snowflake-Labs/builder-workshops/blob/main/data-eng/ingestion-transformation-delivery.sql)
+    * [Snowpipe Streaming](https://github.com/Snowflake-Labs/builder-workshops/blob/main/data-eng/snowpipe-streaming.sql)
+    * [Snowflake Intelligence](https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/snowflake-intelligence.sql)
+    * [Dynamic Table](https://github.com/Snowflake-Labs/builder-workshops/blob/main/data-eng/dynamic-tables.sql)
+    * [From Zero to Agents](https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/zero-agent.sql)
+6. If you passed the lab, you should see an output in the Snowflake console with a message like "You've successfully completed this lab!". Please allow up to 7 business days to receive your badge.
+        """.strip()
+    )
+
     st.subheader("Rules (same as your script)")
     st.markdown(
         """
